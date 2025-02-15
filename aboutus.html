@@ -1,3 +1,4 @@
+<!-- aboutus.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,23 @@
     <title>About Us - Your Salon Name</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        .home-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #b81d5e;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 30px;
+            margin: 20px auto;
+            display: block;
+            width: max-content;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .home-button:hover {
+            background-color: #921347;
+            transform: scale(1.05);
+        }
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -18,8 +36,6 @@
             color: white;
             padding: 20px;
             text-align: center;
-            font-size: 24px;
-            font-weight: bold;
         }
         section {
             padding: 40px;
@@ -38,45 +54,18 @@
             font-size: 28px;
             margin-bottom: 15px;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            padding: 8px;
-            font-size: 18px;
-            background: #ffe6eb;
-            margin: 5px auto;
-            display: inline-block;
-            border-radius: 5px;
-            padding: 10px 20px;
-        }
         footer {
             background-color: #222;
             color: white;
             text-align: center;
             padding: 20px;
-            margin-top: 20px;
-        }
-        .cta-button {
-            display: inline-block;
-            padding: 12px 25px;
-            background-color: #ff3366;
-            color: white;
-            font-size: 18px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            transition: background 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #cc0044;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>About Us</h1>
+        <a href="index.html" class="home-button">🏠 Back to Home</a>
     </header>
     
     <section>
@@ -90,24 +79,8 @@
     </section>
 
     <section>
-        <h2>Our Services</h2>
-        <ul>
-            <li><strong>Hair & Styling:</strong> From classic cuts to trendy transformations.</li>
-            <li><strong>Bridal & Party Makeup:</strong> Flawless, long-lasting makeup for your special occasions.</li>
-            <li><strong>Skin & Facials:</strong> Rejuvenating treatments for a radiant glow.</li>
-            <li><strong>Nail Art & Spa:</strong> Pampering sessions for your nails, hands, and feet.</li>
-        </ul>
-    </section>
-
-    <section>
         <h2>Our Commitment</h2>
         <p>We prioritize <strong>hygiene, premium-quality products, and personalized care</strong> to ensure every visit is a delightful experience. Whether you're looking for a quick refresh or a complete makeover, we make sure you leave our salon <strong>radiant and confident</strong>.</p>
-    </section>
-
-    <section>
-        <h2>Visit Us Today!</h2>
-        <p>Experience beauty redefined at <strong>Your Salon Name</strong>. Let us bring out the best version of you!</p>
-        <a href="contact.html" class="cta-button">Book an Appointment</a>
     </section>
 
     <footer>
