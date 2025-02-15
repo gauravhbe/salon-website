@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Your Salon Name</title>
+    <title>Gallery - Your Salon Name</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         .home-button {
@@ -23,14 +23,45 @@
             background-color: #921347;
             transform: scale(1.05);
         }
+        .gallery-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .gallery-grid img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+        }
+        header {
+            background-color: #d63384;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #2c2c2c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Our Work & Transformations</h1>
+        <a href="index.html" class="home-button">🏠 Back to Home</a>
     </header>
     <section>
-        <h2>Before & After</h2>
+        <h2>Gallery</h2>
         <div class="gallery-grid">
             <img src="images/gallery1.jpg" alt="Makeover 1">
             <img src="images/gallery2.jpg" alt="Makeover 2">
