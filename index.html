@@ -56,24 +56,23 @@
             color: white;
             padding: 40px;
         }
-   .hero {
-    position: relative; /* Makes positioning inside hero possible */
-    background: url('images/hero.jpg') no-repeat center center/cover;
+ .hero {
+    background: url('images/hero.jpg') no-repeat center top/cover;
     min-height: 500px;
     display: flex;
-    align-items: flex-start; /* Moves content to the top */
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     text-align: center;
     color: white;
-    padding-top: 10px; /* Adjust spacing */
+    padding-top: 20px;
+    position: relative;
 }
 .hero h1 {
-    position: absolute;
-    top: 1%; /* Moves text to the top */
-    left: 50%;
-    transform: translateX(-50%);
+    align-self: flex-start; /* Moves the heading to the top */
+    margin-top: 30px; /* Adjust as needed */
     background: rgba(0, 0, 0, 0.5);
-    padding: 10px 25px;
+    padding: 15px 25px;
     border-radius: 8px;
 }
 
