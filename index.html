@@ -1,9 +1,10 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salon Demo</title>
+    <title>Home - Your Salon Name</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -18,108 +19,56 @@
             color: white;
             padding: 20px;
             text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
+            font-size: 24px;
             font-weight: bold;
         }
-        #hero 
-        {
+        .home-container {
             text-align: center;
-            padding: 60px;
-            background: url('images/hero.jpg') no-repeat center top;
-            background-size: contain;
-            background-repeat: no-repeat;
-            height: 400px; /* Adjust the height as needed */
-        }
-        #hero h2 {
-            background: rgba(0, 0, 0, 0.5);
-            display: inline-block;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        section {
             padding: 40px;
-            margin: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
         }
-        .service-images img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin: 10px;
+		.home-container h1 {
+			background: #d63384; /* Matches header color */
+			color: white;
+			display: inline-block;
+			padding: 15px 25px;
+			border-radius: 8px;
+		}
+        .cta-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #b81d5e;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 30px;
+            margin: 20px auto;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .cta-button:hover {
+            background-color: #921347;
+            transform: scale(1.05);
         }
         footer {
             background-color: #2c2c2c;
             color: white;
             text-align: center;
             padding: 20px;
+            margin-top: 20px;
         }
-        footer a {
-            color: #b81d5e;
-            text-decoration: none;
-        }
+	
     </style>
 </head>
 <body>
     <header>
         <h1>Welcome to Your Salon</h1>
-        <p>Luxury Beauty Services in Rohini</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="services.html">Services & Pricing</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="booking.html">Book Now</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
-    
-    <section id="hero">
-        <h2>Your Beauty, Our Passion</h2>
+    <section class="home-container">
+        <h1>Your Beauty, Our Passion</h1>
+        <p>Experience luxury beauty treatments in a relaxing and professional environment.</p>
+        <a href="booking.html" class="cta-button">Book an Appointment</a>
     </section>
-
-    <section id="services">
-        <h2>Our Services & Pricing</h2>
-        <div class="service-images">
-            <img src="images/haircut.jpg" alt="Haircut">
-            <img src="images/makeup.jpg" alt="Makeup">
-            <img src="images/facial.jpg" alt="Facial">
-            <img src="images/nailart.jpg" alt="Nail Art">
-        </div>
-        <ul>
-            <li>Haircut & Styling - ₹500</li>
-            <li>Bridal Makeup - ₹5,000</li>
-            <li>Facials & Skincare - ₹1,200</li>
-            <li>Nail Art & Manicure - ₹800</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>📍 Rohini, Delhi | 📞 Call: <a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a></p>
-        <p>🌍 Follow us: <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">YouTube</a></p>
-    </section>
-
     <footer>
-        <p>&copy; 2024 Your Salon. All rights reserved.</p>
+        <p>&copy; 2024 Your Salon Name. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
-
