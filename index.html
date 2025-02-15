@@ -33,12 +33,15 @@
             text-decoration: none;
             font-weight: bold;
         }
-        #hero {
+        #hero 
+		{
             text-align: center;
             padding: 60px;
-            background: url('images/hero.jpg') no-repeat center;
-            background-size: cover;
-            color: white;
+			background: url('images/hero.jpg') no-repeat center top;
+			background-size: contain;
+			background-repeat: no-repeat;
+			height: 400px; /* Adjust the height as needed */
+
         }
         #hero h2 {
             background: rgba(0, 0, 0, 0.5);
